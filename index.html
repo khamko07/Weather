@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Master Pro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="container">
+        <div class="weather-app">
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name..." id="cityInput">
+                <button onclick="getWeather()">Search</button>
+            </div>
+
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i> Loading...
+            </div>
+
+            <div class="error"></div>
+
+            <div class="weather-info">
+                <div class="weather-card">
+                    <div class="weather-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="temperature">--°C</div>
+                    <div class="description">--</div>
+                    <div class="details">
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <div class="humidity">Humidity: --%</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <div class="wind">Wind: -- km/h</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                            <div class="pressure">Pressure: -- hPa</div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-eye"></i>
+                            <div class="visibility">Visibility: -- km</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Khamko. All rights reserved.</p>
+            <p>Powered by <a href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeather API</a></p>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
