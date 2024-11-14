@@ -46,9 +46,13 @@ A sleek and modern weather application that provides current weather conditions 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+© 2025 Khamko. All rights reserved.
 
 ## Credits
 
 - Weather data provided by [OpenWeather API](https://openweathermap.org/)
 - Icons by [Font Awesome](https://fontawesome.com/)
+
+## Demo
+
+link: https://khamko07.github.io/Weather/
